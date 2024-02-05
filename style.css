@@ -25,11 +25,9 @@ Version: 1.0
 /*記事の幅そろえる*/
 body {
   margin: 0;
+  padding: 0;
 }
-.mycontainer {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+
 /*header*/
 .myhead {
   display: flex;
@@ -47,3 +45,61 @@ body {
   font-size: var(--f2);
 }
 /*投稿ページの設定*/
+/*figure*/
+.figure-area {
+  background-color: rgb(23, 96, 72);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: auto;
+}
+.figure-area img {
+  width: 100%;
+  height: auto;
+}
+.figure-area .figure-title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 50%; /*これだけだと重心が左上のまま*/
+  transform: translateX(-50%);
+  background-color: aqua;
+}
+.figure-title h1 {
+  text-align: center;
+  word-wrap: break-word; /*半角英語折り返しこれないと右にはみ出るときある*/
+}
+.figure-area .figure-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 50%; /*これだけだと重心が左上のまま*/
+  transform: translateX(-50%);
+  background-color: aqua;
+}
+.figure-caption p {
+  text-align: center;
+  word-wrap: break-word;
+  margin: 0;
+}
+.figure-caption time {
+  display: block;
+  text-align: right;
+  word-wrap: break-word;
+  margin: 0;
+}
+/*minislide*/
+.minislide-container {
+  display: flex;
+  overflow-x: auto; /*横スクロール化*/
+}
+.minislide-container img {
+  margin: 0 5px 0 5px;
+  height: 64px;
+  width: auto;
+}
+.minislide-selected {
+  opacity: 0.5;
+}
