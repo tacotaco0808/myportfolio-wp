@@ -25,7 +25,7 @@
         $the_page_ID = get_the_ID();//表示しているページのIDを取得
         $args = array( //この中で条件を書く
             'category_name' => 'illust',
-            'posts_per_page' => 10 // 表示件数
+            'posts_per_page' => 100 // 表示件数
 
         );
         $posts = get_posts($args);
