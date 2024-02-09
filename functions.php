@@ -22,11 +22,20 @@ function mytheme_enqueue()
     wp_enqueue_style(
         'dashicons'
     );
-    wp_enqueue_style(
-        'mytheme-style',
-        get_stylesheet_uri(),
-        array(),
-        filemtime(get_theme_file_path('style.css'))
-    );
+    if(is_page('about')){
+        wp_enqueue_style( 
+            'sample', 
+            get_template_directory_uri().'/page-about.css', 
+            array(), 
+            '1.0.0');
+    }else{
+        wp_enqueue_style(
+            'mytheme-style',
+            get_stylesheet_uri(),
+            array(),
+            filemtime(get_theme_file_path('style.css'))
+        );
+    }
+    
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue');

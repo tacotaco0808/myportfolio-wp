@@ -35,18 +35,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 5px 20px 5px;
+  padding: 20px;
 }
 .myhead img {
+  display: block; /*aタグの下の余白を消す*/
   width: 240px;
   height: 60px;
 }
-.myhead::after {
-  font-family: "dashicons";
-  content: "\f333";
-  font-size: var(--f2);
+.dashicons-menu-alt3 {
+  /*dashiconsのアイコンサイズは幅高さも変えること*/
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
 }
-
 /*投稿ページの設定*/
 /*figure*/
 .figure-area {
@@ -102,6 +103,7 @@ a {
   margin: 0 5px 0 5px;
   height: 64px;
   width: auto;
+  display: block;
 }
 .minislide-selected {
   opacity: 0.5;
@@ -119,6 +121,7 @@ a {
   width: calc(95% / 2);
   /* アスペクト比 */
   aspect-ratio: 1/1;
+  margin: 5px 0 5px 0;
 }
 .contents-wrapper img {
   /*親のサイズに依存させる*/
@@ -126,4 +129,12 @@ a {
   height: 100%;
   /* 画像をサイズ内に収まるよう切り取る */
   object-fit: cover;
+}
+.mycontent-images img {
+  display: block;
+}
+
+/*TOPページの設定*/
+.home {
+  background-color: aliceblue;
 }
