@@ -1,6 +1,8 @@
 <?php //TOPページ?>
-<?php get_header(); ?>
-<main <?php post_class('mycontainer'); ?>>
-    <?php the_content(); ?>
-</main>
-<?php get_footer(); ?>
+<div class="anchor">
+    <?php get_header(); ?>
+    <main >
+        <?php the_content(); ?>
+    </main>
+    <?php get_footer(); ?>
+</div>
