@@ -17,6 +17,7 @@ Version: 1.0
   --blackboard: rgb(98, 145, 140); /* 基本色 */
   --whitechalk: rgb(239, 242, 242);
   --accentblack: rgb(90, 50, 25);
+  --footersize: 30px;
   --myfont: "Josefin Sans", sans-serif;
   --myw: 720px; /*標準幅*/
   --gradient: linear-gradient(
@@ -68,14 +69,19 @@ a {
   height: 30px;
 }
 /*footer*/
+main {
+  padding-bottom: var(--footersize); /*footerの分余白を確保*/
+}
 .anchor {
+  /*フッター位置下から基準にする*/
   min-height: 100%;
   position: relative;
 }
 .myfoot {
   background-color: var(--basebrowncolor);
   width: 100%;
-  position: absolute; /*下からの位置を基準にする*/
+  height: var(--footersize); /*mainで確保されたスペース分フッターを貼る*/
+  position: absolute; /*フッター下からの位置を基準にする*/
   bottom: 0;
 }
 /*投稿ページの設定*/
