@@ -1,3 +1,4 @@
+<?php //投稿されている絵をまとめているギャラリーページ?>
 <?php get_header(); ?>
 <article <? post_class();?>> 
     <div class="contents-wrapper">

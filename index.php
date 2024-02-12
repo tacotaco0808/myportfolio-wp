@@ -1,3 +1,4 @@
+<?php //投稿ページ?>
 <div class="anchor">
     <?php get_header(); ?>
     <main>

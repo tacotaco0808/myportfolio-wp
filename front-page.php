@@ -1,3 +1,4 @@
+<?php //TOPページ?>
 <?php get_header(); ?>
 <main <?php post_class('mycontainer'); ?>>
     <?php the_content(); ?>

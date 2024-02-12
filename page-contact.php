@@ -1,3 +1,4 @@
+<?php //contactページ?>
 <?php get_header(); ?>
 <article>
     <?php the_content();?>

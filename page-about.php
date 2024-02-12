@@ -1,3 +1,4 @@
+<?php //aboutページ?>
 <?php get_header(); ?>
 <article>
     <?php the_content();?>
