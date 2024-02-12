@@ -24,8 +24,14 @@ function mytheme_enqueue()
     );
     if(is_page('about')){
         wp_enqueue_style( 
-            'sample', 
+            'aboutpage', 
             get_template_directory_uri().'/page-about.css', 
+            array(), 
+            '1.0.0');
+    }else if(is_page('contact')){
+        wp_enqueue_style( 
+            'contactpage', 
+            get_template_directory_uri().'/page-contact.css', 
             array(), 
             '1.0.0');
     }else{

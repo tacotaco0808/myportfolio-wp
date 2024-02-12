@@ -9,4 +9,8 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?><!--必ず記述-->
-    <header class="myhead mycontainer"><a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.webp"></a><span class="dashicons dashicons-menu-alt3"></span></header>
+    <header class="myhead mycontainer">
+        <div class="filter">
+            <a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/topbanner.png"></a><span class="dashicons dashicons-menu-alt3"></span>
+        </div>
+    </header>

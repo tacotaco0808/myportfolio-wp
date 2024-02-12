@@ -13,7 +13,10 @@ Version: 1.0
   --f4: 1.25em; /* 20px */
   --f5: 1em; /* 16px */
   --f6: 0.8em; /* 12.8px */
-  --basecolor: #4c83ff; /* 基本色 */
+  --basebrowncolor: rgba(194, 158, 135, 0.9);
+  --blackboard: rgb(98, 145, 140); /* 基本色 */
+  --whitechalk: rgb(239, 242, 242);
+  --accentblack: rgb(90, 50, 25);
   --myfont: "Josefin Sans", sans-serif;
   --myw: 720px; /*標準幅*/
   --gradient: linear-gradient(
@@ -22,8 +25,17 @@ Version: 1.0
     rgba(42, 250, 233, 1) 84.9%
   );
 }
+/*font*/
+@font-face {
+  font-family: "chalk-jp";
+  src: url("fonts/Chalk-JP.woff") format("woff"); /* medium */
+  font-weight: normal;
+  font-style: normal;
+}
 /*記事の幅そろえる+初期設定等*/
+html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -32,15 +44,22 @@ a {
 }
 /*header*/
 .myhead {
+  background-image: url(./images/none);
+  background-size: cover;
+  border-bottom: solid 3px var(--accentblack);
+}
+.filter {
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  background: var(--basebrowncolor);
 }
 .myhead img {
   display: block; /*aタグの下の余白を消す*/
   width: 240px;
   height: 60px;
+  border-radius: 5px;
 }
 .dashicons-menu-alt3 {
   /*dashiconsのアイコンサイズは幅高さも変えること*/
@@ -48,10 +67,27 @@ a {
   width: 30px;
   height: 30px;
 }
+/*footer*/
+.anchor {
+  min-height: 100%;
+  position: relative;
+}
+.myfoot {
+  background-color: var(--basebrowncolor);
+  width: 100%;
+  position: absolute; /*下からの位置を基準にする*/
+  bottom: 0;
+}
 /*投稿ページの設定*/
 /*figure*/
+figure {
+  margin: 0;
+}
 .figure-area {
-  background-color: rgb(23, 96, 72);
+  font-family: "Chalk-JP";
+  src: url("/fonts/Chalk-JP.woff");
+  color: var(--whitechalk);
+  background-color: var(--blackboard);
   position: relative;
   display: flex;
   justify-content: center;
@@ -69,7 +105,7 @@ a {
   width: 100%;
   left: 50%; /*これだけだと重心が左上のまま*/
   transform: translateX(-50%);
-  background-color: aqua;
+  background-color: var(--blackboard);
 }
 .figure-title h1 {
   text-align: center;
@@ -81,7 +117,7 @@ a {
   width: 100%;
   left: 50%; /*これだけだと重心が左上のまま*/
   transform: translateX(-50%);
-  background-color: aqua;
+  background-color: var(--blackboard);
 }
 .figure-caption p {
   text-align: center;
@@ -96,6 +132,7 @@ a {
 }
 /*minislide*/
 .minislide-container {
+  margin: 10px 0 10px 0;
   display: flex;
   overflow-x: auto; /*横スクロール化*/
 }
@@ -115,6 +152,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: var(--blackboard);
 }
 .contents-wrapper a {
   /* 親要素基準に横幅設定 */
@@ -131,6 +169,8 @@ a {
   object-fit: cover;
 }
 .mycontent-images img {
+  border-radius: 5px;
+  border-bottom-right-radius: 15px;
   display: block;
 }
 
