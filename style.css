@@ -68,6 +68,14 @@ a {
   width: 30px;
   height: 30px;
 }
+/*メインコンテンツ*/
+main {
+  background-color: aqua;
+}
+.minislide-container {
+  background-color: rgba(82, 196, 107, 0.788);
+}
+
 /*footer*/
 main {
   padding-bottom: var(--footersize); /*footerの分余白を確保*/
@@ -183,4 +191,32 @@ figure {
 /*TOPページの設定*/
 .home {
   background-color: aliceblue;
+}
+/*TOPページのメニュー*/
+.top-flex-wrap {
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.top-flex-content {
+  width: calc((100% - 50px) / 3);
+}
+.top-flex-content div {
+  position: relative;
+}
+.top-flex-content img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: aquamarine;
+}
+.top-flex-content p {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+}
+.top-flex-content:hover {
+  color: chartreuse;
 }

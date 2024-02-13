@@ -7,9 +7,9 @@
     <?php wp_head(); ?><!--必ず記述テンプレこれのおかげでツールバーとCSS適用が可能-->
 </head>
 
-<body <?php body_class(); ?>>
+<body >
     <?php wp_body_open(); ?><!--必ず記述-->
-    <header class="myhead mycontainer">
+    <header class="myhead">
         <div class="filter">
             <a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/topbanner.png"></a><span class="dashicons dashicons-menu-alt3"></span>
         </div>

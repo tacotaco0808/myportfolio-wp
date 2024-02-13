@@ -47,9 +47,6 @@
                     <?php endforeach; // ループの終了?>
                 </div>
                 
-                
-                
-                <!-- <?php the_post_navigation(); ?> -->
             </article>
         <?php endif; ?>
     </main>
