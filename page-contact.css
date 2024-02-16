@@ -69,6 +69,19 @@ main {
 .minislide-container {
   background-color: rgba(82, 196, 107, 0.788);
 }
+.main-cf7 {
+  /*contactform7*/
+  background-color: azure;
+}
+.main-cf7 form p {
+  text-align: center;
+}
+.main-cf7 form input {
+}
+div.wpcf7 .wpcf7-spinner {
+  /*デザインのくるくる回るやつが邪魔だったから消す*/
+  display: none !important;
+}
 
 /*footer*/
 main {

@@ -2,7 +2,7 @@
 <div class="anchor">
     <?php get_header(); ?>
     <main>
-        <article <? post_class();?>> 
+        <article > 
             <div class="contents-wrapper">
                 <?php if(have_posts()): while(have_posts()):the_post();//the_post()によってthe_content()等一つのコンテンツの内容を扱える?>
                         

@@ -3,7 +3,7 @@
     <?php get_header(); ?>
     <main>
         <?php if(have_posts()): ?>
-            <article <? post_class('');?>>
+            <article>
                 <div>
                     <figure class="figure-area">
                         <div class="figure-title"><h1><?php the_title();?></h1></div>
