@@ -27,7 +27,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/*記事の幅そろえる+初期設定等*/
+/*記事の幅そろえる+初期設定等全てのページに適用*/
 html,
 body {
   height: 100%;
@@ -36,6 +36,16 @@ body {
 }
 a {
   text-decoration: none;
+}
+p {
+  margin: 0;
+}
+main {
+  /*mainコンテンツはビューサイズの8割以上必ず埋める*/
+  min-height: 80%;
+}
+.base-backcolor {
+  background-color: var(--blackboard);
 }
 /*header*/
 .myhead {
@@ -63,9 +73,7 @@ a {
   height: 30px;
 }
 /*メインコンテンツ*/
-main {
-  background-color: aqua;
-}
+
 .minislide-container {
   background-color: rgba(82, 196, 107, 0.788);
 }

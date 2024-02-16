@@ -1,5 +1,5 @@
 <?php //投稿されている絵をまとめているギャラリーページ?>
-<div class="anchor">
+<div class="anchor base-backcolor">
     <?php get_header(); ?>
     <main>
         <article > 

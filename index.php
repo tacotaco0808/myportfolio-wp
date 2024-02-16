@@ -1,5 +1,5 @@
 <?php //投稿ページ?>
-<div class="anchor">
+<div class="anchor base-backcolor">
     <?php get_header(); ?>
     <main>
         <?php if(have_posts()): ?>

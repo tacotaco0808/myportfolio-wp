@@ -1,5 +1,5 @@
 <?php //TOPページ?>
-<div class="anchor">
+<div class="anchor base-backcolor">
     <?php get_header(); ?>
     <main >
         <?php the_content(); ?>
