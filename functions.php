@@ -45,3 +45,50 @@ function mytheme_enqueue()
     
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue');
+
+/* ---------- カスタム投稿worksを追加 ---------- */
+add_action( 'init', 'create_post_type' );
+
+function create_post_type() {
+
+  register_post_type(//カスタム投稿
+    'works',
+    array(
+      'label' => '仕事・実績',
+      'public' => true,
+      'has_archive' => true,
+      'show_in_rest' => true,
+      'menu_position' => 5,
+      'supports' => array(
+        'title',
+        'editor',
+        'thumbnail',
+        'revisions',
+      ),
+    )
+  );
+
+  register_taxonomy(//カテゴリー:デフォルトはカテゴリの概念がない
+    'works-cat',
+    'works',
+    array(
+      'label' => 'カテゴリー',
+      'hierarchical' => true,
+      'public' => true,
+      'show_in_rest' => true,
+    )
+  );
+
+  register_taxonomy(//タグ
+    'works-tag',
+    'works',
+    array(
+      'label' => 'タグ',
+      'hierarchical' => false,
+      'public' => true,
+      'show_in_rest' => true,
+      'update_count_callback' => '_update_post_term_count',
+    )
+  );
+
+}
