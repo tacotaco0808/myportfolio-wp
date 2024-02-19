@@ -218,7 +218,6 @@ figure {
 }
 .fixed-background {
   min-height: calc(100vh - 100px);
-  background-attachment: fixed;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

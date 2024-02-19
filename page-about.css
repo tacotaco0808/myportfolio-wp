@@ -30,6 +30,7 @@
 /*記事の幅そろえる+初期設定等全てのページに適用*/
 html,
 body {
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
@@ -103,3 +104,6 @@ main {
 }
 
 /*aboutページ*/
+.about-article p {
+  margin: 2rem 0 2rem 0;
+}

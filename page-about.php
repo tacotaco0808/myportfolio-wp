@@ -2,7 +2,7 @@
 <div class="anchor base-backcolor">
     <?php get_header(); ?>
     <main>
-        <article class="chalk-font">
+        <article class="about-article chalk-font">
             <?php the_content();?>
         </article>
     </main>
