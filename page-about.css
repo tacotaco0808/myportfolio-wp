@@ -30,7 +30,6 @@
 /*記事の幅そろえる+初期設定等全てのページに適用*/
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -49,6 +48,7 @@ main {
 }
 /*header*/
 .myhead {
+  height: 100px;
   background-image: url(./images/none);
   background-size: cover;
   border-bottom: solid 3px var(--accentblack);
