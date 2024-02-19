@@ -46,6 +46,13 @@ main {
 .base-backcolor {
   background-color: var(--blackboard);
 }
+.chalk-font {
+  font-family: var(--myfont);
+}
+.chalk-font p {
+  font-size: var(--f4);
+  color: var(--whitechalk);
+}
 /*header*/
 .myhead {
   height: 100px;

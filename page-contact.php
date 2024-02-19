@@ -3,7 +3,7 @@
     <?php get_header(); ?>
     <main>
         <article>
-            <div class="wp-contents-contact">
+            <div class="wp-contents-contact chalk-font">
                 <?php the_content();?>
             </div>
             <div class="main-cf7">

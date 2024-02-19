@@ -5,7 +5,7 @@
         <?php if(have_posts()): ?>
             <article>
                 <div>
-                    <figure class="figure-area">
+                    <figure class="figure-area chalk-font">
                         <div class="figure-title"><h1><?php the_title();?></h1></div>
                         <div>
                             <?php the_post_thumbnail();?>

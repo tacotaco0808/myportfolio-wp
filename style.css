@@ -52,6 +52,13 @@ main {
 .base-backcolor {
   background-color: var(--blackboard);
 }
+.chalk-font {
+  font-family: var(--myfont);
+}
+.chalk-font p {
+  font-size: var(--f4);
+  color: var(--whitechalk);
+}
 /*header*/
 .myhead {
   height: 100px;
@@ -132,6 +139,7 @@ figure {
   word-wrap: break-word; /*半角英語折り返しこれないと右にはみ出るときある*/
 }
 .figure-area .figure-caption {
+  margin-bottom: 10px;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -197,6 +205,12 @@ figure {
 .home {
   background-color: aliceblue;
 }
+/*topの見出しタイトル*/
+.top-headline {
+  border-left: solid 1rem var(--basebrowncolor);
+  border-radius: 0 10px 10px 0;
+  margin-right: calc(100vw / 30);
+}
 /*mainvisual*/
 .main-visual {
   width: 100vw;
@@ -233,9 +247,10 @@ figure {
   position: relative;
 }
 .top-flex-content img {
+  border-radius: 5%;
   width: 100%;
   aspect-ratio: 1/1;
-  background-color: aquamarine;
+  background-color: rgba(255, 255, 255, 0.716);
 }
 .top-flex-content p {
   position: absolute;
@@ -246,7 +261,7 @@ figure {
   padding: 0;
 }
 .top-flex-content:hover {
-  color: chartreuse;
+  color: rgb(215, 249, 224);
 }
 /*topページ内のworks*/
 .works {

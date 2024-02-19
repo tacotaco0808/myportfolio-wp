@@ -8,7 +8,7 @@
                 <div class="top-flex-wrap">
                     <a href="<?php echo home_url('/illust')?>" class="top-flex-content">
                         <div>
-                            <img src="" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/dot_illust.png" alt="">
                             <p>illust</p>
                         </div>
                     </a>
@@ -25,7 +25,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="wp-contents">
+                <div class="wp-contents chalk-font">
                     <?php the_content(); ?>
                 </div>
             </div>
