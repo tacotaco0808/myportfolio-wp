@@ -3,28 +3,31 @@
     <?php get_header(); ?>
     <main >
         <div class="fixed-background top-main-background ">
-            <div class="main-visual-filter main-visual  flex-column">
+            <div class="main-visual-filter main-visual flex-column main-visual-anchor">
+                <?php //<!-- 下矢印マーク -->?>
+                <div class="view-down-mark"><span class="dashicons dashicons-arrow-up-alt2"></span></div>
                 <?php //<!-- TOPページメニュー -->?>
                 <div class="top-flex-wrap">
+                    <a href="<?php echo home_url('/about')?>" class="top-flex-content">
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/dot_about.png" alt="">
+                            <p>about</p>
+                        </div>
+                    </a>
                     <a href="<?php echo home_url('/illust')?>" class="top-flex-content">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/dot_illust.png" alt="">
                             <p>illust</p>
                         </div>
                     </a>
-                    <a href="<?php echo home_url('/about')?>" class="top-flex-content">
-                        <div>
-                            <img src="" alt="">
-                            <p>about</p>
-                        </div>
-                    </a>
                     <a href="<?php echo home_url('/contact')?>" class="top-flex-content">
                         <div>
-                            <img src="" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/dot_contact.png" alt="">
                             <p>contact</p>
                         </div>
                     </a>
                 </div>
+                <?php //<!-- TOPの見出しタイトル -->?>
                 <div class="wp-contents chalk-font">
                     <?php the_content(); ?>
                 </div>

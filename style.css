@@ -234,6 +234,22 @@ figure {
 .main-visual-filter {
   background: rgba(229, 252, 234, 0.5);
 }
+.main-visual-anchor {
+  position: relative;
+}
+.view-down-mark {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 0;
+}
+.dashicons-arrow-up-alt2 {
+  /*dashiconsのアイコンサイズは幅高さも変えること*/
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  color: var(--accentblack);
+}
 /*TOPページのメニュー*/
 .top-flex-wrap {
   margin: 10px 0 10px 0;
@@ -250,15 +266,15 @@ figure {
   border-radius: 5%;
   width: 100%;
   aspect-ratio: 1/1;
-  background-color: rgba(255, 255, 255, 0.716);
 }
 .top-flex-content p {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
   left: 50%;
   margin: 0;
   padding: 0;
+  font-size: var(--f4);
+  color: var(--accentblack);
 }
 .top-flex-content:hover {
   color: rgb(215, 249, 224);
