@@ -12,7 +12,7 @@
   --whitechalk: rgb(239, 242, 242);
   --accentblack: rgb(90, 50, 25);
   --footersize: 30px;
-  --myfont: "Josefin Sans", sans-serif;
+  --myfont: "chalk", "Josefin Sans", sans-serif;
   --myw: 720px; /*標準幅*/
   --gradient: linear-gradient(
     79.7deg,
@@ -22,8 +22,8 @@
 }
 /*font*/
 @font-face {
-  font-family: "chalk-jp";
-  src: url("fonts/Chalk-JP.woff") format("woff"); /* medium */
+  font-family: "chalk";
+  src: url("fonts/Chalk-JP.otf") format("opentype"); /* medium */
   font-weight: normal;
   font-style: normal;
 }
@@ -94,3 +94,5 @@ main {
   position: absolute; /*フッター下からの位置を基準にする*/
   bottom: 0;
 }
+
+/*aboutページ*/
