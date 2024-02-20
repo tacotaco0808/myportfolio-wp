@@ -2,8 +2,8 @@
 <div class="anchor base-backcolor">
     <?php get_header(); ?>
     <main >
-        <div class="fixed-background top-main-background ">
-            <div class="main-visual-filter main-visual flex-column main-visual-anchor">
+        <div class="fixed-background-2">
+            <div class="main-visual main-visual-filter flex-column main-visual-anchor">
                 <?php //<!-- 下矢印マーク -->?>
                 <div class="view-down-mark"><span class="dashicons dashicons-arrow-up-alt2"></span></div>
                 <?php //<!-- TOPページメニュー -->?>

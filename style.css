@@ -216,14 +216,37 @@ figure {
   width: 100vw;
   height: calc(100vh - 100px); /*ヘッダーの高さ100px分減らす*/
 }
+/*PCのみ使える背景画面固定
 .fixed-background {
   min-height: calc(100vh - 100px);
+  position: fixed;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .top-main-background {
   background-image: url(./images/dot_mendaco.png);
+}
+*/
+.fixed-background-2 {
+  /*背景固定*/
+  /*background-attachmentはiosでバグが発生するので使わない*/
+  position: relative;
+  z-index: 10;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  background-color: transparent;
+}
+.fixed-background-2::before {
+  content: "";
+  z-index: -1;
+  inset: 0;
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+  position: fixed;
+  background-image: url(./images/dot_mendaco.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .flex-column {
   display: flex;
