@@ -303,11 +303,26 @@ figure {
 }
 /*topページ内のworks*/
 .works {
+  margin: 10% 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .works-content {
+  margin: 5% 0;
   width: calc(100% - 30px);
   aspect-ratio: 3/2;
+}
+.works-content-anchor {
+  position: relative;
+}
+.works-content-anchor time {
+  position: absolute;
+  background-color: rgba(240, 248, 255, 0.785);
+}
+.works-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /*aの下の余白消し*/
 }

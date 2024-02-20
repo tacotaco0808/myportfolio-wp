@@ -39,7 +39,9 @@
             <?php
             $args = array(
                 'post_type' => 'works', //カスタム投稿タイプ名
-                'posts_per_page' => 10 //取得する投稿の件数
+                'posts_per_page' => 10, //取得する投稿の件数
+                'orderby' => 'date',
+                'order' => 'DESC'
             );
             
             $my_posts = get_posts($args);
@@ -47,9 +49,13 @@
             
             <?php foreach ($my_posts as $post) : setup_postdata($post); ?>
             
-            <div class="works-content">
-                <p><?php the_time( get_option( 'date_format' ) ); ?></p>
-                <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+            <div class="works-content works-content-anchor">
+                <a href="<?php the_permalink(); ?>">
+                    <time datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>">
+                        <?php echo esc_html(get_the_date()); ?>
+                    </time>
+                    <img class="works-thumbnail" src="<?the_post_thumbnail_url()?>" alt="">
+                </a>
             </div>
             
             <?php endforeach; ?>

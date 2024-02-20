@@ -45,6 +45,7 @@
                             <div class="minislide-selected"><?php the_post_thumbnail();?></div>
                         <?php endif;?>
                     <?php endforeach; // ループの終了?>
+                    <?php wp_reset_postdata(); ?>
                 </div>
                 
             </article>

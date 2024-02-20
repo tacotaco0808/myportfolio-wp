@@ -13,6 +13,7 @@
                         <?php endif;?>
                 
                 <?php  endwhile;endif;?>
+                <?php wp_reset_postdata(); ?>
             </div>
         </article>
     </main>
