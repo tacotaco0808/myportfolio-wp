@@ -62,7 +62,7 @@
             
             <?php wp_reset_postdata(); ?>
         </div>
-
+        
     </main>
     <?php get_footer(); ?>
 </div>
