@@ -2,5 +2,5 @@
 <div>
     single-worls!!!
 </div>
-<?php the_content()?>
+<?php the_content() ?>
 <?php get_footer(); ?>
