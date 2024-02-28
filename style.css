@@ -36,6 +36,7 @@ Version: 1.0
 /*記事の幅そろえる+初期設定等全てのページに適用*/
 html,
 body {
+  overflow-x: hidden; /*タブレットだとmain-visualが横にはみ出てスクロールバーが出てしまう*/
   margin: 0;
   padding: 0;
 }
