@@ -69,12 +69,12 @@
             */ ?>
 
             <div class="works-content works-content-anchor">
-                <a href="https://qiita.com/tacotaco0808/private/4d825374c765216f6aef">
+                <a href="https://joken-website.vercel.app/">
                     <time datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>">
                         <?php echo esc_html(get_the_date()); ?>
                     </time>
-                    <img class="works-thumbnail" src="<?php echo get_template_directory_uri(); ?>/images/window_capture.png" alt="">
-                    <p class="works-title works-title-text">ウィンドウキャプチャアプリ:Qiita</p>
+                    <img class="works-thumbnail" src="<?php echo get_template_directory_uri(); ?>/images/joken_web.png" alt="">
+                    <p class="works-title works-title-text">デザインしたサイト</p>
                 </a>
             </div>
             <div class="works-content works-content-anchor">
