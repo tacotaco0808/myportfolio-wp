@@ -2,7 +2,7 @@
 gsap.from(".wp-contents", {
     x: -500, // 100px右に移動
     duration:2,
-    onToggle: (self) => console.log("toggled, isActive:", self.isActive)
+   
   });
 
 gsap.from(".view-down-mark",{
@@ -34,3 +34,4 @@ gsap.to(".top-menu-illust",{
     }
    
 });
+

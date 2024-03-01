@@ -18,6 +18,10 @@
 <body>
     <?php wp_body_open(); ?><!--必ず記述-->
     <header class="myhead">
+        <div id="bl_loading">
+            <div id="bl_loadingPercentWrap"><span id="bl_loadingIcon-1" class="loading-circle"></span><span id="bl_loadingIcon-2" class="loading-circle"></span><span id="bl_loadingIcon-3" class="loading-circle"></span></div>
+            <div id="bl_loadingGaugeWrap"><span id="bl_loadingGaugeMeter"></span></div>
+        </div>
         <div class="filter">
             <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/topbanner.png"></a><span class="hamburger dashicons dashicons-menu-alt3"></span>
         </div>

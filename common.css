@@ -147,3 +147,47 @@ main {
   position: absolute; /*フッター下からの位置を基準にする*/
   bottom: 0;
 }
+
+/* ==========================
+  ローディング画面
+========================== */
+#bl_loading {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #444;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+#bl_loadingPercentWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+#bl_loadingGaugeWrap {
+  width: 100%;
+  height: 3px;
+  background-color: #666;
+}
+#bl_loadingGaugeMeter {
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+}
+.loading-circle{
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: skyblue;/*背景色*/
+}
