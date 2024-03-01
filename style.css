@@ -162,7 +162,7 @@ figure {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  bottom: 0;
+  bottom: -20px;
 }
 .dashicons-arrow-up-alt2 {
   /*dashiconsのアイコンサイズは幅高さも変えること*/
