@@ -113,7 +113,7 @@ figure {
 /*mainvisual*/
 .main-visual {
   width: 100vw;
-  height: calc(100vh - 100px); /*ヘッダーの高さ100px分減らす*/
+  height: calc(95vh - 100px); /*ヘッダーの高さ100px分減らす*/
 }
 /*PCのみ使える背景画面固定
 .fixed-background {
@@ -218,6 +218,20 @@ figure {
 .works-content-anchor time {
   position: absolute;
   background-color: rgba(240, 248, 255, 0.785);
+}
+.works-title{
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
+  left: 50%;
+  bottom: 0;
+}
+.works-title-text{
+  background-color: rgba(240, 248, 255, 0.636);
+  text-align: center;
+  color: var(--accentblack);
+  font-size: var(--f1);
+
 }
 .works-thumbnail {
   width: 100%;

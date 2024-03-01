@@ -1,41 +1,47 @@
-<?php //TOPページ?>
+<?php //TOPページ
+?>
 <div class="anchor base-backcolor">
     <?php get_header(); ?>
-    <main >
+    <main>
         <div class="fixed-background-2">
             <div class="main-visual main-visual-filter flex-column main-visual-anchor">
-                <?php //<!-- 下矢印マーク -->?>
+                <?php //<!-- 下矢印マーク -->
+                ?>
                 <div class="view-down-mark"><span class="dashicons dashicons-arrow-up-alt2"></span></div>
-                <?php //<!-- TOPページメニュー -->?>
+                <?php //<!-- TOPページメニュー -->
+                ?>
                 <div class="top-flex-wrap">
-                    <a href="<?php echo home_url('/about')?>" class="top-flex-content">
+                    <a href="<?php echo home_url('/about') ?>" class="top-flex-content">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/dot_about.png" alt="">
                             <p>about</p>
                         </div>
                     </a>
-                    <a href="<?php echo home_url('/illust')?>" class="top-flex-content">
+                    <a href="<?php echo home_url('/illust') ?>" class="top-flex-content">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/dot_illust.png" alt="">
                             <p>illust</p>
                         </div>
                     </a>
-                    <a href="<?php echo home_url('/contact')?>" class="top-flex-content">
+                    <a href="<?php echo home_url('/contact') ?>" class="top-flex-content">
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/dot_contact.png" alt="">
                             <p>contact</p>
                         </div>
                     </a>
                 </div>
-                <?php //<!-- TOPの見出しタイトル -->?>
+                <?php //<!-- TOPの見出しタイトル -->
+                ?>
                 <div class="wp-contents chalk-font">
                     <?php the_content(); ?>
                 </div>
             </div>
         </div>
-        
-        
+
+
         <div class="works">
+            <h1>Works!</h1>
+            <?php /*ワードプレスの動的に追加される部分
             <?php
             $args = array(
                 'post_type' => 'works', //カスタム投稿タイプ名
@@ -43,26 +49,38 @@
                 'orderby' => 'date',
                 'order' => 'DESC'
             );
-            
+
             $my_posts = get_posts($args);
             ?>
-            
+
             <?php foreach ($my_posts as $post) : setup_postdata($post); ?>
-            
+
+                <div class="works-content works-content-anchor">
+                    <a href="<?php the_permalink(); ?>">
+                        <time datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>">
+                            <?php echo esc_html(get_the_date()); ?>
+                        </time>
+                        <img class="works-thumbnail" src="<? the_post_thumbnail_url() ?>" alt="">
+                        <p class="works-title works-title-text"><?php the_title() ?></p>
+                    </a>
+                </div>
+
+            <?php endforeach; ?>
+            */ ?>
+
+
             <div class="works-content works-content-anchor">
-                <a href="<?php the_permalink(); ?>">
+                <a href="https://qiita.com/tacotaco0808/private/4d825374c765216f6aef">
                     <time datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>">
                         <?php echo esc_html(get_the_date()); ?>
                     </time>
-                    <img class="works-thumbnail" src="<?the_post_thumbnail_url()?>" alt="">
+                    <img class="works-thumbnail" src="<?php echo get_template_directory_uri(); ?>/images/window_capture.png" alt="">
+                    <p class="works-title works-title-text">ウィンドウキャプチャアプリ:Qiita</p>
                 </a>
             </div>
-            
-            <?php endforeach; ?>
-            
             <?php wp_reset_postdata(); ?>
         </div>
-        
+
     </main>
     <?php get_footer(); ?>
 </div>

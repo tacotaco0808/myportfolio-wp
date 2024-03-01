@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <script defer src="<? echo get_template_directory_uri(); ?>/js/main.js"></script>
     <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/common.css" type="text/css" as="style" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
     <?php wp_head(); ?><!--必ず記述テンプレこれのおかげでツールバーとCSS適用が可能-->
 </head>
 
