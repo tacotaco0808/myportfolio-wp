@@ -208,7 +208,7 @@ figure {
   justify-content: center;
 }
 .works-content {
-  margin: 5% 0;
+  margin: 30% 0;
   width: calc(100% - 30px);
   aspect-ratio: 3/2;
 }

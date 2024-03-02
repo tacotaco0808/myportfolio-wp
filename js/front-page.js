@@ -1,6 +1,7 @@
 /*animation */
+/*mainvisual内 */
 gsap.from(".wp-contents", {
-    x: -500, // 100px右に移動
+    x: -500, 
     duration:2,
    
   });
@@ -34,4 +35,35 @@ gsap.to(".top-menu-illust",{
     }
    
 });
+/*works内 */
 
+gsap.from(".works-content-3",{
+    x:-600,
+    duration:1,
+    scrollTrigger:{
+        trigger:".works-content-3",
+        start: "top 65%", // アニメーションが始まる位置
+        end: "bottom 10%", // アニメーションが終わる位置
+        markers:true
+    },
+});
+gsap.from(".works-content-2",{
+    x:600,
+    duration:1,
+    scrollTrigger:{
+        trigger:".works-content-2",
+        start: "top 65%", // アニメーションが始まる位置
+        end: "bottom 10%", // アニメーションが終わる位置
+        markers:true
+    },
+});
+gsap.from(".works-content-1",{
+    x:-600,
+    duration:1,
+    scrollTrigger:{
+        trigger:".works-content-1",
+        start: "top 65%", // アニメーションが始まる位置
+        end: "bottom 10%", // アニメーションが終わる位置
+        markers:true
+    },
+});

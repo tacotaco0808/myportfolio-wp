@@ -32,7 +32,7 @@
                 </div>
                 <?php //<!-- TOPの見出しタイトル -->
                 ?>
-                <div class="wp-contents chalk-font">
+                <div class="wp-contents chalk-font" style="color: var(--accentblack);">
                     <?php the_content(); ?>
                 </div>
             </div>
@@ -40,7 +40,7 @@
 
 
         <div class="works">
-            <h1>Works!</h1>
+            <h1 class="chalk-font">Works!</h1>
             <?php /*ワードプレスの動的に追加される部分
             <?php
             $args = array(
@@ -68,7 +68,7 @@
             <?php endforeach; ?>
             */ ?>
 
-            <div class="works-content works-content-anchor">
+            <div class="works-content works-content-anchor works-content-3">
                 <a href="https://joken-website.vercel.app/">
                     <time datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>">
                         <?php echo esc_html(get_the_date()); ?>
@@ -77,7 +77,7 @@
                     <p class="works-title works-title-text">デザインしたサイト</p>
                 </a>
             </div>
-            <div class="works-content works-content-anchor">
+            <div class="works-content works-content-anchor works-content-2">
                 <a href="https://qiita.com/tacotaco0808/private/4d825374c765216f6aef">
                     <time datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>">
                         <?php echo esc_html(get_the_date()); ?>
@@ -86,7 +86,7 @@
                     <p class="works-title works-title-text">ウィンドウキャプチャアプリ:Qiita</p>
                 </a>
             </div>
-            <div class="works-content works-content-anchor">
+            <div class="works-content works-content-anchor works-content-1">
                 <a href="https://qiita.com/tacotaco0808/private/4d825374c765216f6aef">
                     <time datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>">
                         <?php echo esc_html(get_the_date()); ?>

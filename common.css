@@ -51,11 +51,9 @@ main {
 }
 .chalk-font {
   font-family: var(--myfont);
-}
-.chalk-font p {
-  font-size: var(--f4);
   color: var(--whitechalk);
 }
+
 /*header*/
 .myhead {
   height: 100px;
@@ -81,10 +79,11 @@ main {
   font-size: 30px;
   width: 30px;
   height: 30px;
+  color: var(--accentblack);
 }
 /*headerのhamburgerメニュー*/
 .hamburger {
-  z-index: 100;
+  z-index: 51;
 }
 
 .hamburger-menu {
@@ -93,7 +92,7 @@ main {
   position: fixed;
   top: 0;
   transform: translateX(100%); /* メニューを画面の外に飛ばす */
-  z-index: 99;
+  z-index: 50;
   background: #ffffffd5;
 }
 .hamburger-menu h1{
