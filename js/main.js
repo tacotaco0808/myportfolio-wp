@@ -1,4 +1,4 @@
-/*スマホ読み込みのみ */
+/*--------------------------スマホ読み込みのみ------------------------------- */
 function isSmartPhone() {
   if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches) {
     
@@ -7,7 +7,7 @@ function isSmartPhone() {
   }
 }
 isSmartPhone()
-/*loading */
+/*--------------------------loading--------------------------------- */
 const images = document.getElementsByTagName('img'); //サイト内画像
 const loadingArea = document.getElementById('bl_loading'); // ローディング画面全体
 const percentIcon_1 = document.getElementById('bl_loadingIcon-1'); 
@@ -31,11 +31,11 @@ for (let i = 0; i < images.length; i++) {
   img.src = images[i].src; // ソースのパスを設定
 };
 /*ローディングアニメーション */
-gsap.to(".loading-circle",{
-  backgroundColor: 'green',
-  repeat: 2,
+const TL_loading = gsap.timeline({ repeat: -1, repeatDelay: 0.01, yoyo: true });
+TL_loading.to("#bl_loadingIcon-1", { y: -30 , duration: 0.1 })
+  .to("#bl_loadingIcon-2", { y: -30, duration: 0.1})
+  .to("#bl_loadingIcon-3", { y: -30, duration: 0.1});
 
-});
 
 const nowLoading = setInterval(function () {//アニメーションレンダリング
   if(baseCounting <= imgCounting) {//即ローディングを終わらせない
@@ -56,13 +56,14 @@ const nowLoading = setInterval(function () {//アニメーションレンダリ�
     if (baseCounting === images.length) {//読み込み完了
       setTimeout(function() {
         loadingArea.style.display = 'none';
+        TL_loading.kill();//ローディングアニメーションのタイムラインをkill
         clearInterval(nowLoading);
       }, 300);
     }
   }
 }, 50);
 
-/*ハンバーガーメニュー */
+/*----------------------------------ハンバーガーメニュー----------------------------------- */
 document.querySelector(".hamburger").addEventListener("click", function () {
   this.classList.toggle("active");
   document.querySelector(".hamburger-menu").classList.toggle("active");

@@ -184,10 +184,19 @@ main {
   background-color: #fff;
   display: block;
 }
-.loading-circle{
+
+#bl_loadingIcon-1{
   display: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: skyblue;/*背景色*/
+  width: auto;
+  height: 60px;
+}
+#bl_loadingIcon-2{
+  display: none;
+  width: auto;
+  height: 60px;
+}
+#bl_loadingIcon-3{
+  display: none;
+  width: auto;
+  height: 60px;
 }

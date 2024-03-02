@@ -1,5 +1,7 @@
 <footer class="myfoot">
-    <?php bloginfo('name'); ?>
+    <div>
+
+    </div>
 </footer>
 
 <?php wp_footer(); ?><!--必ず記述-->
