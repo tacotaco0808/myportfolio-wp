@@ -70,3 +70,14 @@ document.querySelector(".hamburger").addEventListener("click", function () {
 });
 
 
+/*----------------------------------topへ戻るボタンをスクロールで表示------------------------------- */
+// スクロールされたら表示
+const go_top_btn = document.getElementById('goTOP');
+window.addEventListener("scroll", scroll_event);
+function scroll_event() {
+  if (window.scrollY > 400) {
+    go_top_btn.style.display = 'block';
+  } else if (window.scrollY < 400) {
+    go_top_btn.style.display = 'none';
+  }
+}

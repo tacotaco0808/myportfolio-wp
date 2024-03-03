@@ -74,7 +74,7 @@
                         <?php echo esc_html(get_the_date()); ?>
                     </time>
                     <img class="works-thumbnail" src="<?php echo get_template_directory_uri(); ?>/images/joken_web.png" alt="">
-                    <p class="works-title works-title-text">デザインしたサイト</p>
+                    <p class="works-title works-title-text">初めてデザインしたサイト</p>
                 </a>
             </div>
             <div class="works-content works-content-anchor works-content-2">

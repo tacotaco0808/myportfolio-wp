@@ -207,6 +207,10 @@ figure {
   flex-wrap: wrap;
   justify-content: center;
 }
+.works > h1{
+  text-decoration: underline var(--whitechalk);
+  text-underline-offset:20px;
+}
 .works-content {
   margin: 30% 0;
   width: calc(100% - 30px);

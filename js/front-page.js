@@ -44,7 +44,7 @@ gsap.from(".works-content-3",{
         trigger:".works-content-3",
         start: "top 65%", // アニメーションが始まる位置
         end: "bottom 10%", // アニメーションが終わる位置
-        markers:true
+     
     },
 });
 gsap.from(".works-content-2",{
@@ -54,7 +54,7 @@ gsap.from(".works-content-2",{
         trigger:".works-content-2",
         start: "top 65%", // アニメーションが始まる位置
         end: "bottom 10%", // アニメーションが終わる位置
-        markers:true
+       
     },
 });
 gsap.from(".works-content-1",{
@@ -64,6 +64,5 @@ gsap.from(".works-content-1",{
         trigger:".works-content-1",
         start: "top 65%", // アニメーションが始まる位置
         end: "bottom 10%", // アニメーションが終わる位置
-        markers:true
     },
 });
