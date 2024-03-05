@@ -1,7 +1,9 @@
 <footer class="myfoot">
     <div id="goTOP">
-
         <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/dot_goTOP.png" alt=""></a>
+    </div>
+    <div class="eraser">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/dot_eraser.png" alt="">
     </div>
 </footer>
 

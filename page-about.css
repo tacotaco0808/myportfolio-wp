@@ -2,5 +2,7 @@
 
 /*aboutページ*/
 .about-article p {
-  margin: 2rem 0 2rem 0;
+  margin: 50% 0;
+  text-align: center;
+  opacity: 0;
 }

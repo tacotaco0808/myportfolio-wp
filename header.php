@@ -9,9 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <?php if (is_front_page()) : /*front-pageのみ適用*/ ?>
         <script defer src="<?php echo get_template_directory_uri(); ?>/js/front-page.js"></script>
-    <?php endif; ?>
-    <?php if (is_home()) : /*front-pageのみ適用*/ ?>
+    <?php elseif (is_home()) : /*homeのみ適用*/ ?>
         <script defer src="<?php echo get_template_directory_uri(); ?>/js/home.js"></script>
+    <?php elseif (is_page('about')) : /*front-pageのみ適用*/ ?>
+        <script defer src="<?php echo get_template_directory_uri(); ?>/js/page-about.js"></script>
     <?php endif; ?>
     <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/common.css" type="text/css" as="style" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />

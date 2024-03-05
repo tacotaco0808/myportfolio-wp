@@ -155,7 +155,17 @@ main {
 }
 #goTOP img{
   width: auto;
-  height: 130px;
+  height: 100px;
+}
+div.eraser{
+  width: 5%;
+  position: relative;
+  left: 20px;
+  top: -95%;
+}
+div.eraser img{
+  width: auto;
+  height: 30px;
 }
 /* ==========================
   ローディング画面
