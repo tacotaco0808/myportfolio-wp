@@ -1,11 +1,12 @@
 /*animation */
 /*mainvisual内 */
-gsap.from(".wp-contents", {
-    x: -500, 
-    duration:2,
-   
+window.addEventListener("load",()=>{/*画像読み込み後のアニメーション */
+    gsap.from(".wp-contents", {
+        x: -500, 
+        duration:2,
+    
   });
-
+});
 gsap.from(".view-down-mark",{
     y: 100,
     delay: 1,

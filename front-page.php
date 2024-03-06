@@ -78,12 +78,12 @@
                 </a>
             </div>
             <div class="works-content works-content-anchor works-content-2">
-                <a href="https://qiita.com/tacotaco0808/private/4d825374c765216f6aef">
+                <a href="https://www.youtube.com/watch?v=VM9Kht2a7Ms">
                     <time datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>">
                         <?php echo esc_html(get_the_date()); ?>
                     </time>
-                    <img class="works-thumbnail" src="<?php echo get_template_directory_uri(); ?>/images/window_capture.png" alt="">
-                    <p class="works-title works-title-text">ウィンドウキャプチャアプリ:Qiita</p>
+                    <img class="works-thumbnail" src="<?php echo get_template_directory_uri(); ?>/images/shootinggame.png" alt="">
+                    <p class="works-title works-title-text">シューティングゲーム:Youtube</p>
                 </a>
             </div>
             <div class="works-content works-content-anchor works-content-1">

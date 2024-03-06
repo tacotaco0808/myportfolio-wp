@@ -94,7 +94,10 @@ main {
   top: 0;
   transform: translateX(100%); /* メニューを画面の外に飛ばす */
   z-index: 50;
-  background: #ffffffd5;
+  background-image: url(./images/board-cork.png);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
 }
 .hamburger-menu h1{
   margin: 0;

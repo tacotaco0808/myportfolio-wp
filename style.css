@@ -242,4 +242,5 @@ figure {
   height: 100%;
   object-fit: cover;
   display: block; /*aの下の余白消し*/
+  border-top-right-radius: 20%;
 }
