@@ -75,6 +75,7 @@
                     </time>
                     <img class="works-thumbnail" src="<?php echo get_template_directory_uri(); ?>/images/joken_web.png" alt="">
                     <p class="works-title works-title-text">初めてデザインしたサイト</p>
+                    <p class="works-detail">サークルの合宿で作成した<br>サークルホームページ<br>デザイン初挑戦！ </p>
                 </a>
             </div>
             <div class="works-content works-content-anchor works-content-2">
@@ -84,6 +85,7 @@
                     </time>
                     <img class="works-thumbnail" src="<?php echo get_template_directory_uri(); ?>/images/shootinggame.png" alt="">
                     <p class="works-title works-title-text">シューティングゲーム:Youtube</p>
+                    <p class="works-detail">チームで学内コンテストに応募しました。<br>コーディング担当です。</p>
                 </a>
             </div>
             <div class="works-content works-content-anchor works-content-1">
@@ -93,6 +95,7 @@
                     </time>
                     <img class="works-thumbnail" src="<?php echo get_template_directory_uri(); ?>/images/window_capture.png" alt="">
                     <p class="works-title works-title-text">ウィンドウキャプチャアプリ:Qiita</p>
+                    <p class="works-detail">イラストを描くのにほしかったので<br>資料を見るための補助アプリ<br>を作りました</p>
                 </a>
             </div>
             <?php wp_reset_postdata(); ?>
