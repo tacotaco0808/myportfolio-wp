@@ -37,7 +37,7 @@
             <div class="hamburger-menu-list hamburger-menu-flex">
                 <div class="hamburger-menu-item">
                     <a href="<?php echo home_url('/') ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/dot_about.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/top_icon.png" alt="">
                     </a>
                 </div>
                 <div class="hamburger-menu-item">
