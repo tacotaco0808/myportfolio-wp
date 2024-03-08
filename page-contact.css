@@ -20,9 +20,20 @@
 }
 .main-cf7 form input {
   /*ボタンのデザイン*/
-  
+
 }
 div.wpcf7 .wpcf7-spinner {
   /*デザインのくるくる回るやつが邪魔だったから消す*/
   display: none !important;
+}
+.contact-submit{/*contactformプラグインでクラスを指定していることに注意*/
+  background-color: transparent;
+  width: 80%;
+  height: 3rem;
+  border-radius: 5%;
+  border: solid var(--whitechalk) 3px;
+  color: var(--whitechalk);
+  font-size: var(--f4);
+  font-family: var(--myfont);
+  padding: 0;
 }

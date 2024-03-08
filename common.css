@@ -43,6 +43,7 @@ p {
 
   margin: 0;
 }
+
 main {
   /*mainコンテンツはビューサイズの8割以上必ず埋める*/
   min-height: 80%;
