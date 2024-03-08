@@ -113,7 +113,7 @@ figure {
 /*mainvisual*/
 .main-visual {
   width: 100vw;
-  height: calc(95vh - 100px); /*ヘッダーの高さ100px分減らす*/
+  height: calc(95vh - 15%); /*ヘッダーの高さ100px分減らす*/
 }
 /*PCのみ使える背景画面固定
 .fixed-background {

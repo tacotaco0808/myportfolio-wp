@@ -57,13 +57,14 @@ main {
 
 /*header*/
 .myhead {
-  height: 100px;
+  height: 15%;
   background-image: url(./images/none);
   background-size: cover;
   border-bottom: solid 3px var(--accentblack);
 }
 .filter {
-  padding: 20px;
+  height: 100%;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,8 +72,7 @@ main {
 }
 .myhead img {
   display: block; /*aタグの下の余白を消す*/
-  width: 240px;
-  height: 60px;
+  height: 55%;
   border-radius: 5px;
 }
 .dashicons-menu-alt3 {
