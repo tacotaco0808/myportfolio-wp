@@ -7,11 +7,12 @@
 .main-cf7 {
   /*contactform7*/
   margin: 10px;
-  background-color: rgb(192, 238, 221);
-  border: 3px solid var(--basebrowncolor);
-  border-bottom: 3px solid var(--basebrowncolor);
+  background-color: var(--blackboard);
+  border: 3px solid var(--whitechalk);
   border-radius: 10px;
   padding: 10px 0 10px 0;
+  color: var(--whitechalk);
+  font-family: var(--myfont);
 }
 .main-cf7 form p {
   text-align: center;
@@ -19,6 +20,7 @@
 }
 .main-cf7 form input {
   /*ボタンのデザイン*/
+  
 }
 div.wpcf7 .wpcf7-spinner {
   /*デザインのくるくる回るやつが邪魔だったから消す*/
