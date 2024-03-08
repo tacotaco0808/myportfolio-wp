@@ -15,6 +15,8 @@
         <script defer src="<?php echo get_template_directory_uri(); ?>/js/page-about.js"></script>
     <?php elseif (is_page('contact')) : /*front-pageのみ適用*/ ?>
         <script defer src="<?php echo get_template_directory_uri(); ?>/js/page-contact.js"></script>
+    <?php elseif (is_single()) : /*front-pageのみ適用*/ ?>
+        <script defer src="<?php echo get_template_directory_uri(); ?>/js/single.js"></script>
     <?php endif; ?>
     <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/common.css" type="text/css" as="style" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />

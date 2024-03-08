@@ -38,7 +38,6 @@ figure {
   word-wrap: break-word; /*半角英語折り返しこれないと右にはみ出るときある*/
 }
 .figure-area .figure-caption {
-  margin-bottom: 10px;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -56,6 +55,26 @@ figure {
   text-align: right;
   word-wrap: break-word;
   margin: 0;
+}
+.figure-viewer{
+  top: 0;
+  left: -100%;
+  z-index: 150;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.662);
+  /**/
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#figure-viewer-zoom{
+  width: 90%;
+  border:solid 5px #fff;
+}
+.figure-viewer-active{
+  left: 0;
 }
 /*minislide*/
 .minislide-container {
