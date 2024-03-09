@@ -98,7 +98,7 @@ main {
   height: 100%;
   position: fixed;
   top: 0;
-  transform: translateX(100%); /* メニューを画面の外に飛ばす */
+  right: -100%; /* メニューを画面の外に飛ばす */
   z-index: 50;
   background-image: url(./images/board-cork.png);
   background-size: cover;
@@ -117,7 +117,7 @@ main {
   justify-content: space-around;
 }
 .hamburger-menu.active {
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .hamburger-menu-list{
   text-align: center;

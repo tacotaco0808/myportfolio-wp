@@ -68,6 +68,9 @@ document.querySelector(".hamburger").addEventListener("click", function () {
   this.classList.toggle("active");
   document.querySelector(".hamburger-menu").classList.toggle("active");
 });
+document.querySelector(".hamburger-menu").addEventListener("click", function () {
+  document.querySelector(".hamburger-menu").classList.toggle("active");
+});
 
 
 /*----------------------------------topへ戻るボタンをスクロールで表示------------------------------- */
