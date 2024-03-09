@@ -39,6 +39,11 @@ body {
 a {
   text-decoration: none;
 }
+ul, ol {
+  padding:0;
+  margin:0;
+  list-style:none;
+}
 p {
 
   margin: 0;
@@ -222,4 +227,53 @@ div.eraser img{
   display: none;
   width: auto;
   height: 60px;
+}
+/* ==========================
+  newsコンテンツ
+========================== */
+.news-content{
+  font-family: var(--myfont);
+  color: var(--whitechalk);
+}
+.news-content > ul{
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  height: 25%;
+
+}
+.news-content-title{
+  text-align: center;
+  text-decoration: underline var(--whitechalk);
+  text-underline-offset: 20px;
+}
+.news-content-item{
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.073);
+}
+.news-content-item time{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--whitechalk);
+  justify-content: center;
+}
+.news-date{
+  font-size: var(--f2);
+}
+.news-content-item a{
+  display: flex;
+  border-bottom: solid var(--whitechalk) 3px;
+}
+.news-content-item h3{
+  width: 70%;
+  margin: 0;
+  color: var(--whitechalk);
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  padding: 2rem 0;
+  padding-left: 1rem;
 }

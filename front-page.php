@@ -37,7 +37,9 @@
                 </div>
             </div>
         </div>
-
+        <div class="main-visual-space"></div>
+        <?php echo do_shortcode('[news_content]'); //newsコンテンツのショートコード 
+        ?>
 
         <div class="works">
             <h1 class="chalk-font">Works!</h1>
