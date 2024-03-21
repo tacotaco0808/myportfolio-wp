@@ -15,10 +15,18 @@
                         <?php endif; ?>
 
                 <?php endwhile;
-                endif; ?>
-                <?php wp_reset_postdata(); ?>
+                endif;  ?>
+
             </div>
         </article>
+        <!-- ここ -->
+        <div>
+            <?php the_posts_pagination(array(
+                'prev_text' => '<span class="dashicons dashicons-arrow-left-alt2"></span>',
+                'next_text' => '<span class="dashicons dashicons-arrow-right-alt2"></span>',
+            )); ?>
+        </div>
+
     </main>
     <?php get_footer(); ?>
 </div>

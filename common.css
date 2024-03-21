@@ -277,3 +277,30 @@ div.eraser img{
   padding: 2rem 0;
   padding-left: 1rem;
 }
+/*================ページネーション=================*/
+.navigation{
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+.nav-links{
+  display: flex;
+  justify-content: center;
+}
+.nav-links > a,.nav-links > span{
+  border: var(--whitechalk) solid 2px;
+  color: var(--whitechalk);
+  font-family: "chalk",sans-serif;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.current{
+  background-color: rgba(255, 255, 255, 0.543);
+
+}
+.page-numbers:not(:last-child){
+  margin-right: 1rem;
+}

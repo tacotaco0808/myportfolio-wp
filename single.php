@@ -46,17 +46,17 @@
                         <?php if (has_post_thumbnail() and (get_the_ID() != $the_page_ID)) : //他ページのサムネイルを表示 
                         ?>
                             <div>
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                                <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail($post->ID, 'thumbnail', array('loading' => 'lazy')) ?></a>
                             </div>
                         <?php else : //表示しているページのサムネは選択できない
                         ?>
-                            <div class="minislide-selected"><?php the_post_thumbnail(); ?></div>
+                            <div class="minislide-selected"><?php echo get_the_post_thumbnail($post->ID, 'thumbnail', array('loading' => 'lazy')) ?></div>
                         <?php endif; ?>
                     <?php endforeach; // ループの終了
                     ?>
                     <?php wp_reset_postdata(); ?>
                 </div>
-
+                <!--lazy loading <?php echo get_the_post_thumbnail($post->ID, 'thumbnail', array('loading' => 'lazy')) ?> -->
             </article>
         <?php endif; ?>
     </main>
