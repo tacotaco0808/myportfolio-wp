@@ -70,6 +70,16 @@
             <?php endforeach; ?>
             */ ?>
 
+            <div class="works-content works-content-anchor works-content-4">
+                <a href="https://www.canva.com/design/DAGFjoeAT6c/L46ur65CpotHG8nUflM2QA/edit?utm_content=DAGFjoeAT6c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                    <time datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>">
+                        <?php echo esc_html(get_the_date()); ?>
+                    </time>
+                    <img class="works-thumbnail" src="<?php echo get_template_directory_uri(); ?>/images/this_page.png" alt="">
+                    <p class="works-title works-title-text">このサイトについて</p>
+                    <p class="works-detail">このサイトについての詳細<br> 別サイトへ移動します </p>
+                </a>
+            </div>
             <div class="works-content works-content-anchor works-content-3">
                 <a href="https://joken-website.vercel.app/">
                     <time datetime="<?php echo esc_attr(get_the_date(DATE_W3C)); ?>">

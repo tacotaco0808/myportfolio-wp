@@ -37,7 +37,16 @@ gsap.to(".top-menu-illust",{
    
 });
 /*works内 */
-
+gsap.from(".works-content-4",{
+    x:600,
+    duration:1,
+    scrollTrigger:{
+        trigger:".works-content-4",
+        start: "top 65%", // アニメーションが始まる位置
+        end: "bottom 10%", // アニメーションが終わる位置
+       
+    },
+});
 gsap.from(".works-content-3",{
     x:-600,
     duration:1,
